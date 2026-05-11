@@ -16,7 +16,17 @@ a security technique, not merely an operational preference.
 
 ## Existing Federal Control Architecture
 
-*[To be completed.]*
+NIST SP 800-160 Vol 2 Rev 1 names Diversity explicitly as one of 14
+cyber-resiliency techniques alongside Redundancy, Segmentation,
+Coordinated Protection, and Adaptive Response. NIST SP 800-34 Rev 1
+operationalizes this through contingency planning constructs: business
+impact analysis (BIA), recovery time objectives (RTO), recovery point
+objectives (RPO), and maximum tolerable downtime (MTD). NIST SP
+800-161 Rev 1 upd1 extends these concepts into supply-chain risk
+management. EO 14028 established the SBOM lineage through NTIA July
+2021 minimum elements. The CISA 2025 SBOM NPRM proposes codifying
+minimum SBOM elements into regulation but remains a proposed rule
+as of May 2026.
 
 ## What Is Genuinely New for AI
 
@@ -32,8 +42,26 @@ multi-cloud, PPFL where data sovereignty applies).
 
 ## Evidence Artifacts Required
 
-*[To be completed.]*
+- AI Bill of Materials (AIBOM) for each deployed model
+- Software Bill of Materials (SBOM) for each AI system component
+- Information system contingency plan (ISCP) with AI-specific annexes
+- Cybersecurity supply-chain risk management (C-SCRM) plan
+- Separation of duties (SoD) matrix covering AI operations
+- Concentration risk register identifying single-provider dependencies
+- Tested failover documentation for multi-model or multi-region setups
+- SLSA provenance attestations at L2 or higher where applicable
 
 ## Interaction with Other Pillars
 
-*[To be completed.]*
+Pillar 3 is in direct tension with operational simplicity. Pillar 1
+(governance baked in) must specify diversity and redundancy as system
+requirements at design time or Pillar 3 becomes an unfunded mandate
+at deployment. Pillar 2 (assumed breach) depends on Pillar 3 to
+ensure that a single compromised model, provider, or cloud region
+does not cascade into total system failure. Pillar 4 (zero trust)
+reinforces Pillar 3 by preventing a compromised component from
+laterally accessing redundant backups. Pillar 5 (360° accountability)
+must allocate responsibility for concentration risk across the value
+chain — particularly when a prime contractor selects a single
+foundation-model provider and flows that dependency down to every
+subcontractor.

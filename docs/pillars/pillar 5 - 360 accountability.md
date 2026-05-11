@@ -42,7 +42,23 @@ original training compute) has no U.S. equivalent.
 
 ## Evidence Artifacts Required
 
-*[To be completed.]*
+- Accountability allocation matrix mapping every role in the AI value
+  chain (developer, deployer, contractor, subcontractor, data labeler,
+  compliance certifier, open-source distributor) to specific auditable
+  obligations
+- FAR/DFARS flow-down documentation demonstrating that AI governance
+  requirements propagate through every subcontract tier
+- CMMC 2.0 affirmation records at the appropriate level (L1/L2/L3)
+  for all contractors handling CUI in AI systems
+- NIST AI RMF GOVERN function profile showing GV.RR (roles and
+  responsibilities), GV.PO (policies), GV.SC (supply chain), and
+  GV.RM (risk management) coverage
+- Provider/deployer obligation register aligned to EU AI Act Articles
+  8-21 (provider) and Article 26 (deployer) where applicable
+- Evidence chain linking every Pillar 1-4 artifact to the responsible
+  party who produced, reviewed, and attested to it
+- Cyber-incident reporting procedures documenting the 72-hour DFARS
+  notification chain with named responsible individuals at each tier
 
 ## Interaction with Other Pillars
 

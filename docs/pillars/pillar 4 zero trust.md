@@ -36,8 +36,29 @@ traditional ZT implementations.
 
 ## Evidence Artifacts Required
 
-*[To be completed.]*
+- Zero trust architecture diagram mapping PE/PA/PEP components
+- CISA Zero Trust Maturity Model 2.0 self-assessment with current
+  and target maturity levels for each of the five CISA ZT pillars
+- Identity governance documentation covering human and AI agent
+  identities, including SPIFFE-based workload identity where applicable
+- Per-session access policy definitions for AI agent interactions
+- Behavioral analytics baseline for AI agent activity patterns
+- Embedding/semantic anomaly detection architecture and thresholds
+- Network segmentation documentation showing AI workload isolation
+- Authentication and authorization policy for agent-to-agent and
+  agent-to-service communication
 
 ## Interaction with Other Pillars
 
-*[To be completed.]*
+Pillar 4 is the enforcement mechanism for Pillars 1 through 3.
+Governance baked in (Pillar 1) defines the policies that zero trust
+enforces at runtime. Assumed breach (Pillar 2) provides the threat
+model that justifies zero trust's "never trust" posture — without
+the assumed breach mindset, zero trust controls appear excessive
+and face organizational resistance. No single point of failure
+(Pillar 3) ensures the zero trust infrastructure itself is not a
+concentration risk — a single policy decision point (PDP) failure
+must not disable all access control. Pillar 5 (360° accountability)
+requires that zero trust logs, session records, and policy decisions
+feed into the auditable evidence chain so that every access grant
+or denial is traceable to a responsible party.
